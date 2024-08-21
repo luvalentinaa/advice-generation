@@ -1,0 +1,105 @@
+body {
+    background: var(--color-body);
+
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.card {
+    background-color: var(--color-card);
+    width: 500px;
+    height: 300px;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 12px 5px 50px 1px #0c141c99;
+
+}
+
+.card span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-btn-text);
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+}
+#advice{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+ #advice .description {
+    width: 80%;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    color: var(--color-text);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-justify: distribute;
+}
+
+.card .divider img {
+    max-width: 350px;
+    margin: 2rem 0;
+}
+
+.btn-dice {
+    background: var(--color-btn-text);
+    border-radius: 50%;
+    padding: 2rem;
+    
+    position: absolute;
+    bottom: 30%;
+}
+.btn-dice:hover{
+    box-shadow: 2px 5px 35px 1px var(--color-btn-text);
+
+}
+/*----- Responsivo -----*/
+
+@media (max-width: 900px) {
+    .card {
+        max-width: 350px;
+        height: 300px;
+    }
+
+    .card .description {
+        font-size: .5rem;
+    }
+    .card .divider img {
+        max-width: 250px;
+    }
+   
+}
+@media (max-width: 460px) {
+    .card {
+        max-width: 350px;
+        height: 300px;
+    }
+
+    .card .description {
+        font-size: .3rem;
+    }
+    .card .divider img {
+        max-width: 250px;
+    }
+    
+}
